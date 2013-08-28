@@ -111,6 +111,9 @@ header.block-group {
 
 .bg {
   background: #eee;
+  margin-top: 30px;
+  padding-top: 30px;
+  margin-bottom: 1px;
 }
 
 .bg-2 {
@@ -118,6 +121,7 @@ header.block-group {
   padding-top: 20px;
   box-shadow: inset 0 4px 0 rgba(0,0,0,.1);
   text-shadow: 0 1px 0 #fff;
+  margin-bottom: 15px;
 }
 
 .img {
