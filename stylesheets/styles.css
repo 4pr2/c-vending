@@ -12,6 +12,10 @@ h4 {
   color: #36ab36;
 }
 
+.t-super-head {
+  font-weight: 100;
+}
+
 hr {
   margin: 30px 15px 15px 15px;
   border-bottom: 1px dotted #36ab36;
