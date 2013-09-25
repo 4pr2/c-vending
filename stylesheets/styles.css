@@ -31,7 +31,7 @@ header.block-group {
   position: fixed;
   z-index: 9999;
   width: 100%;
-  padding: 0 0 10px 0;
+  padding: 0;
   background: rgba(255,255,255,.96);
   border-bottom: 1px solid #ccc;
   box-shadow: 0 5px 0 rgba(0,0,0,.15);
