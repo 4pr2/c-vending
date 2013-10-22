@@ -139,7 +139,7 @@ header .btn:focus {
 }
 
 .bg {
-  background: #eee;
+  background: #f4f4f4;
   margin-top: 30px;
   padding-top: 30px;
   margin-bottom: 1px;
@@ -153,6 +153,17 @@ header .btn:focus {
   margin-bottom: 15px;
 }
 
+.bg-2 hr {
+  border-bottom: 1px dotted #fff;
+}
+
+.bg-2 .img {
+  box-shadow: 0 4px 0 rgba(0,0,0,.1);
+  border: 1px solid #fff;
+  font-size: 26px;
+  color: #36ab36;
+}
+
 .img {
   border-radius: 200px;
   overflow:hidden;
@@ -160,6 +171,7 @@ header .btn:focus {
   margin: 0 auto;
   padding: 20px;
   background: #fff;
+  border: 1px solid #ddd;
 }
 
 .hr-top {
