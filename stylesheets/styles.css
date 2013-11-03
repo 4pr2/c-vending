@@ -33,8 +33,13 @@ header.block-group {
   width: 100%;
   padding: 0;
   background: rgba(255,255,255,.96);
-  border-bottom: 1px solid #ccc;
-  box-shadow: 0 5px 0 rgba(0,0,0,.15);
+  border-bottom: 1px solid #aaa;
+  box-shadow: 0 3px 0 rgba(0,0,0,.2);
+}
+
+header.block-group .inblock {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
   .logo .inblock a {
@@ -109,7 +114,7 @@ header .btn:focus {
 
 .map {
   height: 420px;
-  background: #3f5335 url(../images/map-bg.jpg) repeat 50% 70px;
+  background: #3f5335 url(../images/map-bg.jpg) repeat 50% 65px;
   background-size: 1280px 380px;
   background-attachment: fixed;
 }
@@ -130,10 +135,10 @@ header .btn:focus {
   margin: 260px 50px 0 0;
   color: #333;
   background: rgba(255,255,255,.9);
-  padding: 0 0 15px 7px;
+  padding: 0 7px 15px 7px;
   width: 40%;
   border-radius: 2px;
-  font-size: 22px;
+  font-size: 23px;
   line-height: 26px;
   box-shadow: 0 7px 0 -1px rgba(0,0,0,.3);
 }
