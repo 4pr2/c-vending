@@ -13,13 +13,15 @@
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/scroll.js"></script>
 <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-44591522-1', 'c-vending.com');
-ga('send', 'pageview');
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-44591522-1', 'c-vending.com');
+  ga('send', 'pageview');
 </script>
 </head>
 <body>
@@ -28,23 +30,23 @@ ga('send', 'pageview');
     <div class="wrap">
       <div class="block logo">
         <div class="inblock">
-          <a href="#"></a>
+          <a href="#top">&nbsp;</a>
         </div>
       </div>
-      <div class="block menu">
+      <div class="block menu autonav">
         <div class="inblock">
           <nav>
 <!--        <a href="#1" class="active"> -->
-            <a href="#1">
+            <a href="#about" class="active" id="testit">
               <span>Возможности системы</span>
             </a>
-            <a href="#2">
+            <a href="#aparate">
               <span>Аппаратная часть</span>
             </a>
-            <a href="#3">
+            <a href="#price">
               <span>Цены</span>
             </a>
-            <a href="#4">
+            <a href="#call">
               <span>Заказать</span>
             </a>
             <a class="btn" href="http://vending.4pr2.com">
@@ -56,18 +58,19 @@ ga('send', 'pageview');
     </div>
   </header>
 
-  <div class="block-group map">
+  <div class="block-group map" id="top">
     <div class="wrap">
       <div class="teazer">
         <img src="images/teazer-vending3.png">
       </div>
       <div class="block teazer-text">
-        <div class="inblock" id="1">
+        <div class="inblock">
           Kомплексное решение для онлайн мониторинга торговых аппаратов
         </div>
       </div>
     </div>
   </div>
+  <span class="anchor" id="about" style="margin-top: -60px;"></span>
   <div class="block-group">
     <div class="wrap">
       <div class="block w50">
@@ -89,7 +92,11 @@ ga('send', 'pageview');
         </div>
       </div>
       <br class="clear">
-      <br class="clear">
+    </div>
+  </div>
+
+  <div class="block-group">
+    <div class="wrap">
       <div class="block w33">
         <div class="inblock">
           <img src="images/icons-1.png" width="40">
@@ -124,8 +131,11 @@ ga('send', 'pageview');
         </div>
       </div>
       <br class="clear">
-      <hr>
-      <br>
+    </div>
+  </div>
+  <hr>
+  <div class="block-group">
+    <div class="wrap">
       <div class="block w60">
         <div class="inblock t-big">
           <h2>Расширение функционала торговых аппаратов</h2>
@@ -142,10 +152,11 @@ ga('send', 'pageview');
         <div class="inblock t-small">
           <img src="images/4.jpg">
         </div>
-      </div><span id="2"></span>
+      </div>
       <br class="clear">
     </div>
   </div>
+<span class="anchor" id="aparate"></span>
 <br class="clear">
   <div class="block-group bg">
     <div class="wrap">
@@ -154,7 +165,8 @@ ga('send', 'pageview');
           <div class="img">
             <img src="images/5.jpg"></span>
           </div>
-          <h2 id="3">CV-1</h2>
+<span class="anchor" id="price" style="margin-top: -100px;"></span>
+          <h2>CV-1</h2>
           <p style="padding: 5px 20px">
             Считывание модемом CV-1 данных аудита с вендингового аппарата в&nbsp;формате EVA-DTS и передает по сетям GSM, GPRS в Программу мониторинга.
           </p>
@@ -179,17 +191,15 @@ ga('send', 'pageview');
       <div class="block w50">
         <div class="inblock t-center">
           <div class="img t-bigger">
-            <b>872</b> грн / шт.
+            <b class="t-2">872</b> <small>грн/шт</small>
           </div>
-
         </div>
       </div>
-      <div class="block w50" style="box-shadow: inset 1px 0 0 #fff; margin: 0 0 15px 0">
+      <div class="block w50" style="box-shadow: inset 1px 0 0 #fff; margin: 0 0 80px 0">
         <div class="inblock t-center">
           <div class="img t-bigger">
-            <b>1592 </b> грн / шт.
+            <b class="t-2">1592 </b> <small>грн/шт</small>
           </div>
-          <br>
         </div>
       </div>
       <div style="max-width: 800px; margin: 0 auto" class="t-center">
@@ -204,9 +214,10 @@ ga('send', 'pageview');
         </p>
       </div>
     </div>
-    <br class="clear" id="4">
   </div>
   <br class="clear">
+
+<span class="anchor" id="call" style="margin-top: -95px;"></span>
 
   <div class="block-group">
     <div class="wrap">
@@ -224,36 +235,37 @@ ga('send', 'pageview');
         </div>
         <br class="clear">
       </div>
-      <div class="block w50">
-        <div class="inblock t-left">
-        </div>
-        <br class="clear">
-      </div>
     </div>
   </div>
-
+<br class="clear">
   <footer class="block-group">
     <div class="wrap">
       <div class="block w30">
         <div class="inblock">
-          © <a href="#">C-Vending</a> 2013
-          <br>
-          Все права защищены
         </div>
       </div>
 
-      <div class="block w40">
+      <div class="block w40 t-center">
         <div class="inblock">
+          <p>
+            © <a href="#top">C-Vending</a> 2013−2014
+          </p>
+          <br>
+          <p class="t-smaller">
+            Сайт создано <nobr>в <a href="http://kvadracom.com" target="_blank">Квадракоме&nbsp;<span class="t-smaller">•••</span>°</a><nobr>
+          </p>
         </div>
       </div>
 
       <div class="block w30">
         <div class="inblock"><br>
-          Сайт создано <nobr>в <a href="http://kvadracom.com" target="_blank"> <span class="t-smaller">•••</span>°&nbsp;Квадракоме</a><nobr>
         </div>
       </div>
+      <br class="clear">
     </div>
   </footer>
 
 </body>
 </html>
+
+

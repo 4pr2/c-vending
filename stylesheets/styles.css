@@ -12,17 +12,26 @@ h4 {
   color: #36ab36;
 }
 
+.block-group {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .t-super-head {
   font-weight: 100;
 }
 
 hr {
-  margin: 30px 15px 15px 15px;
+  margin: 30px 0;
   border-bottom: 1px dotted #36ab36;
 }
 
+.anchor {
+  position: absolute;
+}
+
 .wrap {
-  max-width: 1024px;
+  max-width: 960px;
   min-width: 880px;
   margin: 0 auto;
 }
@@ -34,26 +43,24 @@ header.block-group {
   padding: 0;
   background: rgba(255,255,255,.96);
   border-bottom: 1px solid #aaa;
-  box-shadow: 0 3px 0 rgba(0,0,0,.2);
+  box-shadow: 0 3px 0 rgba(0,0,0,.12);
 }
 
 header.block-group .inblock {
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin-top: 0;
 }
 
   .logo .inblock a {
     display: block;
     border-bottom: 0;
-    height: 45px;
+    height: 60px;
     width: 190px;
     margin: 0 20px 0 0;
-    background: url(../images/c-vending-logo.png) no-repeat 0 0;
-    background-size: 190px 45px;
+    background: url(../images/c-vending-logo.png) no-repeat 0 75%;
+    background-size: 152px 36px;
   }
 
   .menu {
-    overflow: hidden;
     float: none;
   }
 
@@ -66,21 +73,23 @@ header.block-group .inblock {
     display: inline-block;
     border-bottom: 0;
     color: #333;
-    margin: 8px 0 0 0;
-    padding: 5px 10px;
+    padding: 25px 14px 5px;
     line-height: 18px;
-    height: 20px;
+    height: 30px;
+    margin-bottom: -4px;
+    margin-left: -4px;
+    border-bottom: 4px solid transparent;
+    transition: all .2s;
   }
 
   header nav a:hover,
     header nav a:focus {
-    border-bottom: 0;
+    border-bottom: 4px solid transparent;
     color: #36ab36;
   }
 
   header nav a.active {
-    border: 1px solid #36ab36;
-    border-radius: 20px;
+    border-bottom: 4px solid #36ab36;
     color: #36ab36;
   }
 
@@ -92,11 +101,14 @@ header.block-group .inblock {
     border-bottom: 1px dotted #5cc55c;
   }
 
-header .btn,
-header .btn:hover,
-header .btn:focus {
+header nav a.btn,
+header nav a.btn:hover,
+header nav a.btn:focus {
   float: right;
-  border-radius: 20px;
+  margin-top: 20px;
+  border-radius: 40px;
+  padding: 3px 12px;
+  height: 20px;
   font-size: 13px;
   line-height: 20px;
   border: 1px solid #5cc55c;
@@ -114,7 +126,9 @@ header .btn:focus {
 
 .map {
   height: 420px;
-  background: #3f5335 url(../images/map-bg.jpg) repeat 50% 65px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background: #3f5335 url(../images/map-bg.jpg) repeat 50% 64px;
   background-size: 1280px 380px;
   background-attachment: fixed;
 }
@@ -134,25 +148,35 @@ header .btn:focus {
 .map .teazer-text {
   margin: 260px 50px 0 0;
   color: #333;
-  background: rgba(255,255,255,.9);
-  padding: 0 7px 15px 7px;
-  width: 40%;
+  background: rgba(255,255,255,.95);
+  padding: 5px 10px 20px 15px;
+  width: 355px;
   border-radius: 2px;
-  font-size: 23px;
+  font-size: 20px;
   line-height: 26px;
-  box-shadow: 0 7px 0 -1px rgba(0,0,0,.3);
+  box-shadow: 0 15px 10px -4px rgba(0,0,0,.5);
 }
 
 .bg {
   background: #f4f4f4;
   margin-top: 30px;
-  padding-top: 30px;
+  padding-top: 60px;
   margin-bottom: 1px;
+}
+
+.img {
+  border-radius: 200px;
+  overflow:hidden;
+  max-width: 250px;
+  margin: 0 auto 40px;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
 }
 
 .bg-2 {
   background: #f4f2c5;
-  padding-top: 20px;
+  padding-top: 30px;
   box-shadow: inset 0 4px 0 rgba(0,0,0,.1);
   text-shadow: 0 1px 0 #fff;
   margin-bottom: 15px;
@@ -165,18 +189,11 @@ header .btn:focus {
 .bg-2 .img {
   box-shadow: 0 4px 0 rgba(0,0,0,.1);
   border: 1px solid #fff;
-  font-size: 26px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  text-indent: 22px;
+  max-width: 160px;
   color: #36ab36;
-}
-
-.img {
-  border-radius: 200px;
-  overflow:hidden;
-  max-width: 250px;
-  margin: 0 auto;
-  padding: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
 }
 
 .hr-top {
@@ -184,9 +201,11 @@ header .btn:focus {
 }
 
 footer.block-group {
+  margin-top: 50px;
+  padding-top: 50px;
   padding-bottom: 160px;
-  border-top: 5px solid #ddd;
-  font-size: 13px;
+  border-top: 2px solid #eee;
+  font-size: 15px;
   color: #888;
 }
 
